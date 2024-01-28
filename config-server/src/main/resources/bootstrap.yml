@@ -1,5 +1,5 @@
 server:
-  port:8081
+  port: 9090
 
 spring:
   profiles:
@@ -9,7 +9,7 @@ spring:
       server:
         git:
           uri: https://github.com/jdicao/UTPL_BackEnd.git
-          searchPahts: config-data
+          searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
   security:
