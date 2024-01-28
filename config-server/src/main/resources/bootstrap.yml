@@ -8,4 +8,15 @@ spring:
     config:
       server:
         git:
-          url:
+          uri: https://github.com/jdicao/UTPL_BackEnd.git
+          searchPahts: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+  security:
+    user:
+      name: root
+      password: s3cr3t
+
+logging:
+  level:
+    org.springframework.cloud.config: debug
